@@ -1,0 +1,15 @@
+<h1>Crie uma lista</h1>
+
+<%=form_with scope: :lista, local: true, url: listas_path do |form|%>
+<p>
+    <%=form.label :nome%>
+    <%=form.text_field :nome%>
+</p>
+<p>
+<%=form.label :descrição%>
+<%=form.text_area :descrição%>
+</p>
+<p>
+<%=form.submit("salvar")%>
+</p>
+<%end %>
